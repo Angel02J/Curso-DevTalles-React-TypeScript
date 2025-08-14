@@ -12,3 +12,16 @@ const [ letters, numbers ] = returnsArrayFn();
 
 console.log(letters);
 console.log(numbers + 100);
+
+const useState = (value: string) => {
+    return [
+        value,
+        (newValue: string) =>{
+            console.log(newValue);
+        },    
+    ] as const;
+};
+
+const [name, setName] = useState("Goku");
+console.log(name)
+setName('Vegeta');
