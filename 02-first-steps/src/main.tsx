@@ -1,8 +1,9 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { FirtsStepsApp } from './FirstStepsApp';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <h1>Hola mundo</h1>
+    <FirtsStepsApp/>
   </StrictMode>,
 );
