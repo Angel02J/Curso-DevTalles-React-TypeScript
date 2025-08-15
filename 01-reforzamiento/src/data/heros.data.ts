@@ -1,45 +1,45 @@
-interface Hero {
+export interface Hero {
     id: number;
     name: string;
     owner: Owner
 };
 
-// type Owner = 'DC' | 'MarWel';
+type Owner = 'DC' | 'Marvel';
 
-enum Owner {
-    DC = 'Dc',
-    Marvel = 'Marvel'
-}
+// enum Owner {
+//     DC = 'DC',
+//     Marvel = 'Marvel'
+// }
 
-const heroes: Hero[] = [
+export const heroes: Hero[] = [
     {
         id: 1,
         name: 'Batman',
-        owner: Owner.DC,
+        owner: 'DC',
     },
     {
         id: 2,
         name: 'Spiderman',
-        owner: Owner.Marvel,
+        owner: 'Marvel',
     },
     {
         id: 3,
         name: 'Superman',
-        owner: Owner.DC,
+        owner: 'DC',
     },
     {
         id: 4,
         name: 'Flash',
-        owner: Owner.DC,
+        owner: 'DC',
     },
     {
         id: 5,
         name: 'Wolverine',
-        owner: Owner.Marvel,
+        owner: 'Marvel',
     },
     {
         id: 6,
         name: 'Green Lantern',
-        owner: Owner.DC
+        owner: 'DC'
     }
 ];
