@@ -1,6 +1,6 @@
 const myPromise = new Promise<number>((resolve, reject) => {
     setTimeout(() => {
-        //!YO QUIERO MI DINERO
+        //!YO QUIERO MI DINERO        
         // resolve(100);
         reject('Mi amigo se perdió');
     }, 2000);
