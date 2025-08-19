@@ -1,13 +1,13 @@
+import ItemCounter from "./ItemCounter";
+
 export function FirtsStepsApp() {
     return (
         <>
-            <h1>Hola mundo</h1>
-            <p>Esto es un párrafo</p>
-            <button>Click me</button>
+            <h1>Carrito de compras</h1>
 
-            <div>
-                <h2>Hola dentro de un div</h2>
-            </div>
+            <ItemCounter />
+            <ItemCounter />
+            <ItemCounter />
         </>
     )
 }
